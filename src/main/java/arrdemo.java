@@ -7,6 +7,7 @@ public class arrdemo {
         for (int i = 0; i < 3; i++) {
             System.out.println(arr[i]);
             System.out.println("练习idea上传GitHub");
+            System.out.println("练习idea上传GitHub，但GitHub上已经有新内容");
         }
     }
 }
