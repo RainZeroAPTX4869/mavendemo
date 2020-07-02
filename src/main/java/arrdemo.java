@@ -6,6 +6,7 @@ public class arrdemo {
 //        不指定，初始值为0
         for (int i = 0; i < 3; i++) {
             System.out.println(arr[i]);
+            System.out.println("练习idea上传GitHub");
         }
     }
 }
