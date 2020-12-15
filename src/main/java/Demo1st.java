@@ -10,13 +10,11 @@ public class Demo1st {
         System.out.println(j);
         System.out.println(++i);
         System.out.println(i++ + ++i);
-        PrintXing printXing = new PrintXing();
-        printXing.leng();
+        printXing();
     }
-}
 
-class PrintXing {
-    void leng() {
+
+    private static void printXing(){
         for (int i = 0; i < 5; i++) {
             /*控制行数*/
             for (int j = 4; j > i; j--) {
