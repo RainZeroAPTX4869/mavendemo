@@ -1,6 +1,5 @@
-import java.util.Arrays;
 
-public class arrdemo {
+public class Arrdemo {
     public static void main(String[] args) {
         int[] arr = new int[3];
 //        不指定，初始值为0
