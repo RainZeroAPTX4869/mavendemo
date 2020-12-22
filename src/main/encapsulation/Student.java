@@ -8,10 +8,13 @@
 public class Student {
     private int sid;
     private String name;
-    private int age;
+    private String age;
     private String addr;
 
-    public Student(int sid, String name, int age, String addr) {
+    public Student() {
+    }
+
+    public Student(int sid, String name, String age, String addr) {
         this.sid = sid;
         this.name = name;
         this.age = age;
@@ -42,11 +45,11 @@ public class Student {
         this.name = name;
     }
 
-    public int getAge() {
+    public String getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(String age) {
         this.age = age;
     }
 }
