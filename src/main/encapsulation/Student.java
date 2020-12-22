@@ -6,8 +6,33 @@
  * 代码的封装，创建私有的成员变量
  */
 public class Student {
+    private int sid;
     private String name;
     private int age;
+    private String addr;
+
+    public Student(int sid, String name, int age, String addr) {
+        this.sid = sid;
+        this.name = name;
+        this.age = age;
+        this.addr = addr;
+    }
+
+    public int getSid() {
+        return sid;
+    }
+
+    public void setSid(int sid) {
+        this.sid = sid;
+    }
+
+    public String getAddr() {
+        return addr;
+    }
+
+    public void setAddr(String addr) {
+        this.addr = addr;
+    }
 
     public String getName() {
         return name;
