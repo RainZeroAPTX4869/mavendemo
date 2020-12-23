@@ -1,7 +1,8 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import static java.lang.Thread.*;
+import static java.lang.Thread.sleep;
+
 
 /**
  * Created with IntelliJ IDEA.
