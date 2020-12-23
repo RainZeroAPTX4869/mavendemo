@@ -65,23 +65,31 @@ public class StudentManager {
     }
 
     private static void addStudent(ArrayList<Student> arrayList) {
-        final Scanner sc = new Scanner(System.in);
-
-
+        Scanner sc = new Scanner(System.in);
+        int sid;
+        while (true) {
+            System.out.println("请输入学号：");
+            sid = sc.nextInt();
+            int flag = findSid(sid, arrayList);
+            if (sid == -1) {
+                System.out.println("正在返回主页...");
+                return;
+            } else if (flag == -1) {
+                break;
+            } else {
+                System.out.println("该学号已存在,请重新输入");
+            }
+        }
         System.out.println("请输入姓名：");
         String name = sc.nextLine();
         System.out.println("请输入年龄：");
         String age = sc.nextLine();
         System.out.println("请输入地址：");
         String addr = sc.nextLine();
-        System.out.println("请输入学号：");
-        int sid = sc.nextInt();
-
         Student s = new Student(sid, name, age, addr);
 
         arrayList.add(s);
         System.out.println("添加学生成功");
-
     }
 
     private static void deleteStudent(ArrayList<Student> arrayList) {
@@ -91,7 +99,7 @@ public class StudentManager {
             Scanner sc = new Scanner(System.in);
             System.out.println("输入要删除学生资料的学号");
             int sid = sc.nextInt();
-            int flag = findSid(sid,arrayList);
+            int flag = findSid(sid, arrayList);
             if (flag == -1) {
                 //若方法里循环结束后,flag为-1，说明arrayList里没有输入的学号
                 System.out.println("输入的学号不存在");
@@ -112,7 +120,7 @@ public class StudentManager {
             Scanner sc = new Scanner(System.in);
             System.out.println("输入要修改学生资料的学号");
             int sid = sc.nextInt();
-            int flag = findSid(sid,arrayList);
+            int flag = findSid(sid, arrayList);
             if (flag == -1) {
                 //若方法中的循环结束后,flag还为-1，说明arrayList里没有输入的学号
                 System.out.println("输入的学号不存在");
@@ -138,7 +146,6 @@ public class StudentManager {
         }
     }
 
-
     private static void findAllStudent(ArrayList<Student> arrayList) {
         if (arrayList.isEmpty()) {
             System.out.println("暂无学生信息，请先添加");
@@ -151,16 +158,14 @@ public class StudentManager {
                 System.out.println(st.getSid() + "\t\t" + st.getName() + "\t" + st.getAge() + "岁\t\t" + st.getAddr());
             }
         }
-
-
     }
 
-    private static int findSid(int sid,ArrayList<Student> arrayList) {
+    private static int findSid(int sid, ArrayList<Student> arrayList) {
         //查找arrayList里是否有输入的sid
         int flag = -1;
         for (int i = 0; i < arrayList.size(); i++) {
             Student st = arrayList.get(i);
-            if (st.getSid()==sid) {
+            if (st.getSid() == sid) {
                 flag = i;
                 break;
             }
