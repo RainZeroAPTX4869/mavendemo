@@ -4,7 +4,7 @@
  * @author RainZero
  * @date 2020/12/24 10:33
  */
-public class Animal {
+public abstract class Animal {
     private String name;
     private int age;
 

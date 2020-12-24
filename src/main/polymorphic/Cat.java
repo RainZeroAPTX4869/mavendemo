@@ -4,7 +4,7 @@
  * @author RainZero
  * @date 2020/12/24 10:33
  */
-public class Cat extends Animal {
+public class Cat extends Animal implements Jumpping {
     public Cat() {
     }
 
@@ -14,10 +14,16 @@ public class Cat extends Animal {
 
     @Override
     void eat() {
-        System.out.println("猫吃鱼");
+        System.out.print("吃鱼");
     }
 
     void play() {
-        System.out.println("猫爱玩");
+        System.out.print("爱玩");
+    }
+
+    @Override
+    public void jump() {
+        System.out.print("跳高了");
+
     }
 }
