@@ -13,6 +13,7 @@ public class JumpDemo {
         System.out.print("，会");
         cat.play();
         System.out.print("，现在学会");
+        //cat.jump();
         Jumpping jumpping = new Cat();
         jumpping.jump();
     }
