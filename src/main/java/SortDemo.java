@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 /**
  * Created with IntelliJ IDEA.
@@ -26,9 +27,12 @@ public class SortDemo {
 
         arrayToString(arr);
 
+        //Arrays类自带排序与转String方法
+        Arrays.sort(arr);
+        System.out.println(Arrays.toString(arr));
     }
 
-    static void arrayToString(int[] arr) {
+    private static void arrayToString(int[] arr) {
         StringBuilder sb = new StringBuilder();
         //append拼接字符串方法
         sb.append("[");
