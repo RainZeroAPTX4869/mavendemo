@@ -1,4 +1,4 @@
-public class Demo1st {
+public class PrintDemo {
 
     public static void main(String[] args) {
         /*new PrintXing().leng();*/
