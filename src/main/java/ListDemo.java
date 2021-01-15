@@ -11,7 +11,7 @@ import java.util.List;
  */
 public class ListDemo {
     public static void main(String[] args) {
-        List<Student> list = new ArrayList<>();
+        ArrayList<Student> list = new ArrayList<>();
 
         Student student1 = new Student(1, "张三", "20", "qwe");
         Student student2 = new Student(2, "李四", "21", "asd");
