@@ -13,7 +13,7 @@ public class PokerDemo {
     public static void main(String[] args) {
 
         //创建hashmap,键是编号,值是牌
-        HashMap<Integer, String> hm = new HashMap<>();
+        HashMap<Integer, String> hm = new HashMap<>(54);
 
         //创建ArrayList储存牌的编号
         ArrayList<Integer> arrayList = new ArrayList<>();
