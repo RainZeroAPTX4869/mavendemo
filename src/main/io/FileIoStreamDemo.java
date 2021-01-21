@@ -27,7 +27,7 @@ public class FileIoStreamDemo {
             System.out.print((char) by);
         }
 
-        //字节数组读取,由于上方代码已经读取完毕，这里只做演示
+        //字节数组读取,由于上方代码已经读取同一个对象完毕，这里只做演示
         byte[] bys = new byte[1024];
         int len;
         while ((len = fileInputStream.read(bys)) != -1) {
