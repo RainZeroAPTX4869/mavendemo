@@ -52,4 +52,9 @@ public class Student {
     public void setAge(String age) {
         this.age = age;
     }
+
+    @Override
+    public String toString() {
+        return "学号：" + sid + ", 姓名：'" + name + '\'' + ", 年龄：'" + age + '\'' + ", 地址：'" + addr + '\'';
+    }
 }
