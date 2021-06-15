@@ -2,13 +2,15 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <option name="BUILD_PROCESS_HEAP_SIZE" value="1000" />
-    <annotationProcessing>
-      <profile name="Maven default annotation processors profile" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="mavendemo" />
-      </profile>
-    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="boot-02-web-admin" target="1.8" />
+      <module name="day01" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="boot-02-web-admin" options="-parameters" />
+      <module name="mavendemo" options="" />
+    </option>
   </component>
 </project>
