@@ -67,15 +67,15 @@ public class StudentManager {
     private static void addStudent(ArrayList<Student> arrayList) {
         final Scanner sc = new Scanner(System.in);
 
-        System.out.println("请输入学号：");
-        int sid = sc.nextInt();
+
         System.out.println("请输入姓名：");
         String name = sc.nextLine();
         System.out.println("请输入年龄：");
         String age = sc.nextLine();
         System.out.println("请输入地址：");
         String addr = sc.nextLine();
-
+        System.out.println("请输入学号：");
+        int sid = sc.nextInt();
 
         Student s = new Student(sid, name, age, addr);
 
